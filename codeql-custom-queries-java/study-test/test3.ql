@@ -8,13 +8,13 @@ int isDemo2(int i){
 }
 
 string isDemo1(string s) {
-    
-    result=s and (s="zhangsan"
+    result=s and
+    (s="zhangsan"
     or
     s="lisi"
     or
-    s="ss")
+    s="ss") and  result=s 
 }
     
 from int x
-select isDemo2(x),"测试有返回值的谓词"
+select isDemo1("ss"),isDemo2(x),"测试有返回值的谓词"
